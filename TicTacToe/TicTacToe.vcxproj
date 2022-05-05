@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Interface.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="checkerboard.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
