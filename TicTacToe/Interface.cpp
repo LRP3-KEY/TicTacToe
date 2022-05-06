@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
 
-class Interface
+class InterFace
 {
 public:
-	void ShowInterface(void);
+	void ShowInterFace(void);
 	void Chose(void);
 };
 
-void Interface::ShowInterface(void)
+void InterFace::ShowInterFace(void)
 {
 	cout << "********************************" << endl;
 	cout << "1.开始游戏" << endl << "2.辅助设置" << endl << "3.关于作者" << endl << "4.游戏版本" << endl;
 	cout << "********************************" << endl;
 }
 
-void Interface::Chose(void)
+void InterFace::Chose(void)
 {
 	int a;
 	string t;
@@ -30,7 +30,7 @@ void Interface::Chose(void)
 		cin >> t;
 		if (t == "q" || t == "Q")
 		{
-			return ShowInterface();
+			return ShowInterFace();
 		}
 		else { cout << "输入无效...." << endl; }
 		break; }
@@ -39,7 +39,7 @@ void Interface::Chose(void)
 		cin >> t;
 		if (t == "q" || t == "Q")
 		{
-			ShowInterface();
+			ShowInterFace();
 			Chose();
 		}
 		else { cout << "输入无效...." << endl; }
@@ -52,8 +52,8 @@ void Interface::Chose(void)
 int main()
 {
 	string r;
-	Interface face;
-	face.ShowInterface();
+	InterFace face;
+	face.ShowInterFace();
 	face.Chose();
 	while (1)
 	{
@@ -65,7 +65,7 @@ int main()
 		}
 		if (r == "N" || r == "n")
 		{
-			face.ShowInterface();
+			face.ShowInterFace();
 			face.Chose();
 		}
 		else { cout << "请输入正确的选项....." << endl; }

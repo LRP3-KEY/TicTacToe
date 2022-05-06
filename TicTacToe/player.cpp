@@ -5,35 +5,35 @@ using namespace std;
 class Player
 {
 	public:
-		void setname(void);  //获取名字
-		string showname(int k);  //展示名字
+		void SetName(void);  //获取名字
+		string ShowName(int k);  //展示名字
 		
 	private:
-		string player1;  //玩家一
-		string player2;  //玩家二
+		string player1_;  //玩家一
+		string player2_;  //玩家二
 };
 
-void Player::setname(void)
+void Player::SetName(void)
 {
 	cout << "请输入Player1名字：" << endl;
-	cin >> player1;
+	cin >> player1_;
 	cout << "请输入Player2名字：" << endl;
-	cin >> player2;
+	cin >> player2_;
 }
 
-string Player::showname(int k)
+string Player::ShowName(int k)
 {
 	int i;
 	string playeri;
-	if (k == 1) { playeri = player1;} 
-	if (k == 2) { playeri = player2;}
+	if (k == 1) { playeri = player1_;} 
+	if (k == 2) { playeri = player2_;}
 	return playeri;
 }
 
 int main()
 {
 	Player playname;
-	playname.setname();
-	cout << "player1:" << playname.showname(1)<<"     "<< "player2:" << playname.showname(2);
+	playname.SetName();
+	cout << "player1:" << playname.ShowName(1)<<"     "<< "player2:" << playname.ShowName(2);
 	return 0;
 }
